@@ -5,6 +5,12 @@ TASK: test
 """
 TASK = 'test'
 
+def readints(fin):
+	return tuple(int(x) for x in fin.readline().split())
+
+def readint(fin):
+	return int(fin.readline())
+
 def main(fin, fout):
 	pass
 
